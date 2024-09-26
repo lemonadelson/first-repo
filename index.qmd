@@ -5,6 +5,8 @@ embed-resources: true
 ---
 
 ```{r}
+#| message: false
+
 library(tidyverse)
 library(ggplot2)
 
