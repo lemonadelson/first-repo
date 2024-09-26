@@ -1,0 +1,16 @@
+---
+title: "My Analysis"
+format: html
+embed-resources: true
+---
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+
+storms |>
+  filter(category >= 3) |>
+  ggplot() +
+  geom_point(mapping = aes(x = pressure, y = lat), alpha = .5)
+
+```
